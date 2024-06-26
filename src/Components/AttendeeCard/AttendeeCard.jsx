@@ -3,7 +3,7 @@ import './AttendeeCard.css';
 function AttendeeCard({ attendee }) {
 
     return (
-        <div className="card bg-white shadow-lg w-80 h-96 rounded-lg overflow-hidden m-5 something bg-slate-800">
+        <div className="card shadow-xl shadow-black w-80 h-96 overflow-hidden m-5 something">
             <div className="imageContainer w-full h-56 flex justify-center items-center">
                 <img className="object-cover object-center w-40 h-40 rounded-full" src={attendee.image} alt={attendee.name} />
             </div>

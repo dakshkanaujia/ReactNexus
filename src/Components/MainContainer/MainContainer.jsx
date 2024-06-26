@@ -132,7 +132,26 @@ function Search() {
             "role": "Machine Learning Engineer, NVIDIA",
             "description": "Lucas is a machine learning engineer at NVIDIA, working on developing and optimizing machine learning models. He is passionate about deep learning and AI applications.",
             "image": "https://img.freepik.com/premium-photo/attractive-cheerful-business-woman-working-laptop-modern-office_484651-7339.jpg"
+        },
+        {
+            "name": "Liam Johnson",
+            "role": "UI/UX Designer, Adobe",
+            "description": "Liam is a UI/UX designer at Adobe, specializing in creating intuitive user interfaces for Adobe's creative software. He is passionate about user-centered design and enhancing user experiences.",
+            "image": "https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083378_1280.jpg"
+        },
+        {
+            "name": "Emma Brown",
+            "role": "Content Creator, YouTube",
+            "description": "Emma is a content creator on YouTube, known for her insightful videos on digital marketing and social media strategies. She enjoys sharing her knowledge with her audience and fostering a community.",
+            "image": "https://media.istockphoto.com/photos/portrait-of-creative-woman-standing-against-wall-picture-id1280057582?b=1&k=20&m=1280057582&s=170667a&w=0&h=TVYbAFT8gRqgMwStVr5qoDXRZP4bY4pS72rUg5um_NY="
+        },
+        {
+            "name": "Noah Garcia",
+            "role": "Data Analyst, Spotify",
+            "description": "Noah is a data analyst at Spotify, analyzing user data to optimize personalized music recommendations. He enjoys diving deep into data insights and applying them to improve user satisfaction.",
+            "image": "https://www.hakuhodo-global.com/wp_admin/wp-content/uploads/2017/09/H20170921_Career-Woman_6_Eng_16_02_prof.jpg"
         }
+        
     ];
     useEffect(() => {
         const filteredAttendees = attendees.filter((attendee) => {
@@ -147,11 +166,12 @@ function Search() {
             <input
                 type="text"
                 placeholder="Search by name"
-                className="w-1/2 p-2 mb-5"
+                className="w-1/2 p-4 mb-10 rounded-3xl"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
-            <Attendees attendees={finalAttendees} />
+                <Attendees attendees={finalAttendees} />
+                
         </div>
     )
 }

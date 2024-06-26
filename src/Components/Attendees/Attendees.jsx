@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import AttendeeCard from "../AttendeeCard/AttendeeCard";
+import './Attendees.css';
 
 function Attendees({attendees}) {    
 
@@ -9,7 +10,9 @@ function Attendees({attendees}) {
         {
             attendees.map((attendee) => {
                 return(
-                    <AttendeeCard key={attendee.name} attendee={attendee} />
+                    <div className="m-10">
+                        <AttendeeCard key={attendee.name} attendee={attendee} />
+                    </div>
                 )
             })
         }
