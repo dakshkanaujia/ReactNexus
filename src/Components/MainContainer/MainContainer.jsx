@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from 'react';
 import Attendees from "../Attendees/Attendees";
-import { exp } from "three/examples/jsm/nodes/Nodes.js";
 
 function Search() {
     const [search, setSearch] = useState("");
