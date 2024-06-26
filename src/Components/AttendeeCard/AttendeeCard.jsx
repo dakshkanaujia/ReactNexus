@@ -1,5 +1,7 @@
 import React from 'react';
 import './AttendeeCard.css';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 function AttendeeCard({ attendee }) {
 
     return (
@@ -8,9 +10,12 @@ function AttendeeCard({ attendee }) {
                 <img className="object-cover object-center w-40 h-40 rounded-full" src={attendee.image} alt={attendee.name} />
             </div>
             <div className="p-4">
-                <h2 className="font-semibold text-lg text-white">{attendee.name}</h2>
-                <p className="text-sm text-white">{attendee.role}</p>
-                {/* <p className="text-gray-700 mt-2">{attendee.description}</p> */}
+                <h2 className="font-semibold text-xl text-white">{attendee.name}</h2>
+                <p className="text-lg text-white">{attendee.role}</p>
+                <div className="flex justify-start items-center mt-2">
+                    <FaLinkedinIn className="text-2xl text-white mr-4" />
+                    <FaInstagram className="text-2xl text-white mr-4" />
+                </div>
             </div>
         </div>
     );

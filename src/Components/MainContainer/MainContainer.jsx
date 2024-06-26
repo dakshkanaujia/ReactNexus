@@ -143,7 +143,7 @@ function Search() {
             "name": "Emma Brown",
             "role": "Content Creator, YouTube",
             "description": "Emma is a content creator on YouTube, known for her insightful videos on digital marketing and social media strategies. She enjoys sharing her knowledge with her audience and fostering a community.",
-            "image": "https://media.istockphoto.com/photos/portrait-of-creative-woman-standing-against-wall-picture-id1280057582?b=1&k=20&m=1280057582&s=170667a&w=0&h=TVYbAFT8gRqgMwStVr5qoDXRZP4bY4pS72rUg5um_NY="
+            "image": "https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM="
         },
         {
             "name": "Noah Garcia",
@@ -162,11 +162,11 @@ function Search() {
 
     return (
         <div className='w-screen h-screen flex flex-col justify-center items-center'>
-            <h1 className='text-7xl honk-heading  mb-11'> React Nexus </h1>
+            <h1 className='text-7xl honk-heading mt-5 mb-11'> React Nexus </h1>
             <input
                 type="text"
                 placeholder="Search by name"
-                className="w-1/2 p-4 mb-10 rounded-3xl"
+                className="w-1/2 p-4 mb-10 rounded-3xl bg-transparent border border-orange-600 text-white"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
