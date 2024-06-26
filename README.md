@@ -22,5 +22,6 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://dakshkanaujia/react-nexus.git
    cd ReactNexus
+   ```
    ```bash
    npm run dev
