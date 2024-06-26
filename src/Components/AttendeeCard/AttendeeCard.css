@@ -1,0 +1,24 @@
+
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14rem; /* Adjust the height as needed */
+}
+
+.imageContainer img {
+    width: 10rem; /* Adjust the width as needed */
+    height: 10rem; /* Adjust the height as needed */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
+}
+  
+.something{
+  background-image: linear-gradient(#3d3b3a 1px, transparent 1px), linear-gradient(90deg, #3d3b3a 1px, transparent 1px);
+    background-size: 120px 120px;
+}
